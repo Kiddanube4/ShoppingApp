@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ProductCell" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Getir_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hou-KK-T7l">
+                        <rect key="frame" x="20" y="18" width="81" height="69"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblProductname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvQ-Rt-IQW">
+                        <rect key="frame" x="109" y="18.333333333333336" width="211" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LblDescription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpU-yi-Rnc">
+                        <rect key="frame" x="109" y="42.333333333333336" width="211" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-mi-Nxb">
+                        <rect key="frame" x="108.99999999999999" y="66" width="210.66666666666663" height="20.333333333333329"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysn-P5-qx4">
+                                <rect key="frame" x="0.0" y="0.0" width="103" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhk-T5-5wb">
+                                <rect key="frame" x="108" y="0.0" width="102.66666666666669" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kvQ-Rt-IQW" firstAttribute="leading" secondItem="hou-KK-T7l" secondAttribute="trailing" constant="8" id="37N-JQ-tac"/>
+                    <constraint firstItem="YpU-yi-Rnc" firstAttribute="leading" secondItem="hou-KK-T7l" secondAttribute="trailing" constant="8" id="5es-GX-JTX"/>
+                    <constraint firstItem="TA7-mi-Nxb" firstAttribute="leading" secondItem="hou-KK-T7l" secondAttribute="trailing" constant="8" id="6Yq-sV-g8O"/>
+                    <constraint firstAttribute="trailing" secondItem="TA7-mi-Nxb" secondAttribute="trailing" constant="20.329999999999998" id="D5l-9h-uEc"/>
+                    <constraint firstItem="YpU-yi-Rnc" firstAttribute="centerY" secondItem="hou-KK-T7l" secondAttribute="centerY" id="DTN-zE-DGo"/>
+                    <constraint firstItem="YpU-yi-Rnc" firstAttribute="top" secondItem="kvQ-Rt-IQW" secondAttribute="bottom" constant="3.6666666666666643" id="HLs-Ol-xny"/>
+                    <constraint firstAttribute="trailing" secondItem="kvQ-Rt-IQW" secondAttribute="trailing" constant="20" id="KV2-ZP-lcH"/>
+                    <constraint firstAttribute="bottom" secondItem="hou-KK-T7l" secondAttribute="bottom" constant="18" id="MSE-Ua-v6e"/>
+                    <constraint firstItem="hou-KK-T7l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="MSg-tn-xdQ"/>
+                    <constraint firstItem="TA7-mi-Nxb" firstAttribute="top" secondItem="YpU-yi-Rnc" secondAttribute="bottom" constant="3.3300000000000001" id="cbx-N6-e5H"/>
+                    <constraint firstAttribute="trailing" secondItem="YpU-yi-Rnc" secondAttribute="trailing" constant="20" id="dd4-SR-3Bg"/>
+                    <constraint firstItem="hou-KK-T7l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ng2-lK-KxA"/>
+                    <constraint firstItem="hou-KK-T7l" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.238235" id="ssh-zr-QoZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgProduct" destination="hou-KK-T7l" id="5pV-nl-VF5"/>
+                <outlet property="lblAmountInBasket" destination="Zhk-T5-5wb" id="8wf-D1-sE0"/>
+                <outlet property="lblDescription" destination="YpU-yi-Rnc" id="0kK-8k-6HJ"/>
+                <outlet property="lblPrice" destination="Ysn-P5-qx4" id="RQF-Rh-OSc"/>
+                <outlet property="lblProductName" destination="kvQ-Rt-IQW" id="lWR-FN-dEr"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="25.704225352112676"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Getir_Logo" width="1000" height="1000"/>
+    </resources>
+</document>
